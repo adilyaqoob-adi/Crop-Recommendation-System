@@ -1,6 +1,24 @@
 import streamlit as st
 import joblib
 import pandas as pd
+from PIL import Image
+
+# Create three columns: Left Logo, Middle Title, Right Logo
+# The [1, 3, 1] ratio makes the title area wider than the logo areas
+col1, col2, col3 = st.columns([1, 3, 1])
+
+with col1:
+    # Use 'use_container_width=True' to make it responsive
+    st.image("nutech_logo1.png", width=120) 
+
+with col2:
+    # Center the title text horizontally
+    st.markdown("<h1 style='text-align: center;'>Crop Recommendation System</h1>", unsafe_allow_index=True)
+
+with col3:
+    st.image("eu_logo.png", width=120)
+
+st.markdown("---") # Adds a divider line below the header
 
 # 1. Load your saved model
 model = joblib.load('crop_recommendation_model.pkl')
@@ -102,4 +120,5 @@ st.sidebar.title("System Info")
 st.sidebar.info("""
 **Note:** This model is currently trained on 22 crops including Rice, Maize, and Cotton. 
 Wheat and Sugarcane recommendations are coming in version 2.0!
+
 """)
