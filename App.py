@@ -9,15 +9,14 @@ col1, col2, col3 = st.columns([1, 3, 1])
 
 with col1:
     # Use 'use_container_width=True' to make it responsive
-    st.image("nutech_logo1.png", width=120) 
+    st.image("nutech_logo1.png", width=100) 
 
 with col2:
     # Center the title text horizontally
-    st.markdown("<h1 style='text-align: center;'>Crop Recommendation System</h1>", unsafe_allow_index=True)
+    st.markdown("<h1 style='text-align: center;'>Crop Recommendation System</h1>", unsafe_allow_html=True)
 
 with col3:
-    st.image("eu_logo.png", width=120)
-
+    st.image("eu_logo.png", width=100)
 st.markdown("---") # Adds a divider line below the header
 
 # 1. Load your saved model
@@ -122,3 +121,4 @@ st.sidebar.info("""
 Wheat and Sugarcane recommendations are coming in version 2.0!
 
 """)
+
