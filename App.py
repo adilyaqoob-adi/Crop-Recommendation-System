@@ -13,7 +13,7 @@ with col1:
 
 with col2:
     # Center the title text horizontally
-    st.markdown("<h1 style='text-align: center;'>Crop Recommendation System</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>🌱Crop Recommendation System</h1>", unsafe_allow_html=True)
 
 with col3:
     st.image("eu_logo.png", width=100)
@@ -54,7 +54,7 @@ sowing_guide = {
 
 # 3. App Header
 st.set_page_config(page_title="Crop Recommender", page_icon="🌱")
-st.title("🌱 Precision Agriculture: Crop Recommender")
+#st.title("🌱 Precision Agriculture: Crop Recommender")
 st.markdown("Enter soil and weather details to find the best crop for your land in Pakistan.")
 
 # 4. Input fields
@@ -121,6 +121,7 @@ st.sidebar.info("""
 Wheat and Sugarcane recommendations are coming in version 2.0!
 
 """)
+
 
 
 
