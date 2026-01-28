@@ -17,7 +17,7 @@ with col2:
     st.markdown("<h1 style='text-align: center;'>🌱 Precision Agriculture: Crop Recommender</h1>", unsafe_allow_html=True)
 
 with col3:
-    st.image("eu_logo.png", width=100)
+    st.image("Active_logo.png", width=100)
 st.markdown("---") # Adds a divider line below the header
 
 # 1. Load your saved model
@@ -122,6 +122,7 @@ st.sidebar.info("""
 Wheat and Sugarcane recommendations are coming in version 2.0!
 
 """)
+
 
 
 
