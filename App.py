@@ -9,7 +9,7 @@ col1, col2, col3 = st.columns([1, 3, 1])
 
 with col1:
     # Use 'use_container_width=True' to make it responsive
-    st.image("nutech_logo.png", width=100) 
+    st.image("logo.png", width=100) 
 
 with col2:
     # Center the title text horizontally
@@ -121,5 +121,6 @@ st.sidebar.info("""
 Wheat and Sugarcane recommendations are coming in version 2.0!
 
 """)
+
 
 
