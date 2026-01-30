@@ -14,7 +14,7 @@ with col1:
 with col2:
     # Center the title text horizontally
     #st.markdown("<h1 style='text-align: center;'>🌱Crop Recommendation System</h1>", unsafe_allow_html=True)
-    st.markdown("<h1 style='text-align: center;'>🌱 Crop Recommender System</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>🌱 Crop Recommendation System</h1>", unsafe_allow_html=True)
 
 with col3:
     st.image("Active_logo.png", width=150)
@@ -122,6 +122,7 @@ st.sidebar.info("""
 Wheat and Sugarcane recommendations are coming in version 2.0!
 
 """)
+
 
 
 
